@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <input type="text" name="display" id="screen" placeholder="0">
+        </div>
+        <div class="row">
+            <button type="button" onclick="deg()" class="btn-color">DEG</button>
+            <button type="button" onclick="fe()" class="btn-color">F-E</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="memoryclear()" id="memoryclear" class="btn-color" disabled>MC</button>
+            <button type="button" onclick="memoryrecall()" id="memoryrecall" class="btn-color" disabled>MR</button>
+            <button type="button" onclick="memoryplus()" class="btn-color">M+</button>
+            <button type="button" onclick="memoryminus()" class="btn-color">M-</button>
+            <button type="button" onclick="memorystore()" class="btn-color">MS</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="trigonometry()" class="trigonometry" id="trigonometry"><img
+                    src="images/right-angled-triangle.svg" width="20px" height="20px">Trigonometry<i
+                    class="fa-sharp fa-solid fa-angle-down"></i>
+                <div id="myDropdown1" class="dropdown-content1">
+                    <a onclick="sin()">sin(x)</a>
+                    <a onclick="cos()">cos(x)</a>
+                    <a onclick="tan()">tan(x)</a>
+                </div>
+            </button>
+            <button type="button" onclick="specialfunction()" id="function" class="function"><i
+                    class="fa-solid fa-florin-sign"></i>Function<i class="fa-sharp fa-solid fa-angle-down"></i>
+                <div id="myDropdown2" class="dropdown-content2">
+                    <a onclick="abs()">abs(x)</a>
+                    <a onclick="floor()">floor(x)</a>
+                    <a onclick="ceil()">ceil(x)</a>
+                </div>
+            </button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="twopower()" class="button">2<sup>n</sup></button>
+            <button type="button" onclick="pi()" class="button">π</button>
+            <button type="button" onclick="e()" class="button">e</button>
+            <button type="button" onclick="allclear()" class="button">C</button>
+            <button type="button" onclick="del()" class="button"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="square()" class="button">x<sup>2</sup></button>
+            <button type="button" onclick="inverse()" class="button">1/x</button>
+            <button type="button" onclick="absolute()" class="button">|x|</button>
+            <button type="button" onclick="exp()" class="button">exp</button>
+            <button type="button" onclick="input('%')" class="button">mod</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="sqrt()" class="button">&Sqrt;x</button>
+            <button type="button" onclick="input('&#40;')" class="button">(</button>
+            <button type="button" onclick="input('&#41;')" class="button">)</button>
+            <button type="button" onclick="factorial()" class="button">n!</button>
+            <button type="button" onclick="input('/')" class="button operator">&div;</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="input('**')" class="button">x<sup>y</sup></button>
+            <button type="button" onclick="input(7)" class="button bg-color">7</button>
+            <button type="button" onclick="input(8)" class="button bg-color">8</button>
+            <button type="button" onclick="input(9)" class="button bg-color">9</button>
+            <button type="button" onclick="input('*')" class="button operator">&times;</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="pow()" class="button">10<sup>x</sup></button>
+            <button type="button" onclick="input(4)" class="button bg-color">4</button>
+            <button type="button" onclick="input(5)" class="button bg-color">5</button>
+            <button type="button" onclick="input(6)" class="button bg-color">6</button>
+            <button type="button" onclick="input('-')" class="button operator">-</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="log()" class="button">log</button>
+            <button type="button" onclick="input(1)" class="button bg-color">1</button>
+            <button type="button" onclick="input(2)" class="button bg-color">2</button>
+            <button type="button" onclick="input(3)" class="button bg-color">3</button>
+            <button type="button" onclick="input('+')" class="button operator">+</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="ln()" class="button">ln</button>
+            <button type="button" onclick="sign()" class="button bg-color"
+                style="font-size: 14px;font-weight: 500;">+/-</button>
+            <button type="button" onclick="input(0)" class="button bg-color">0</button>
+            <button type="button" onclick="input('.')" class="button bg-color">.</button>
+            <button type="button" onclick="calc()" class="button operator"
+                style="background-color:lightskyblue">=</button>
+        </div>
+    </div>
+    <script src="js/typescript.js"></script>
+    <script src="https://kit.fontawesome.com/39cee866b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
